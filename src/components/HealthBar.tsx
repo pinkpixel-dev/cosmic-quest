@@ -8,27 +8,28 @@ interface HealthBarProps {
 }
 
 const HealthBar: React.FC<HealthBarProps> = ({ current, max }) => {
-  const percentage = Math.floor((current / max) * 100);
+  const percentage = Math.max(0, Math.min(100, (current / max) * 100));
   
-  let barColor = "bg-cosmic-blue";
-  if (percentage < 30) {
-    barColor = "bg-red-500";
-  } else if (percentage < 60) {
-    barColor = "bg-cosmic-gold";
-  }
+  // Determine color based on health percentage
+  const getHealthColor = () => {
+    if (percentage > 70) return 'bg-green-500';
+    if (percentage > 30) return 'bg-yellow-500';
+    return 'bg-red-500';
+  };
   
   return (
-    <div className="flex flex-col w-full">
-      <div className="flex justify-between text-sm mb-1">
-        <span className="text-game-text">Health</span>
-        <span className={`font-pixel text-xs ${percentage < 30 ? 'text-red-500 animate-pulse' : 'text-cosmic-blue'}`}>
-          {current}/{max}
-        </span>
+    <div className="mb-1">
+      <div className="flex justify-between text-xs mb-1">
+        <span className="text-muted-foreground">Health</span>
+        <span className="text-cosmic-pink">{current}/{max}</span>
       </div>
       <Progress 
         value={percentage} 
-        className="h-2 bg-muted/20" 
-        indicatorClassName={`${barColor} transition-all duration-500`}
+        className="h-2 bg-muted/30" 
+        // Using inline style since indicatorClassName isn't supported
+        style={{ 
+          '--progress-indicator-color': getHealthColor().replace('bg-', '')
+        } as React.CSSProperties}
       />
     </div>
   );

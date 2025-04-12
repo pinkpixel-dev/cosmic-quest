@@ -1,4 +1,3 @@
-
 import { Item, Scene } from "../types/game";
 
 export const items: Record<string, Item> = {
@@ -35,6 +34,42 @@ export const items: Record<string, Item> = {
     name: "Space Compass",
     description: "A compass that doesn't point north, but seems to guide you through the cosmos.",
     icon: "🧭"
+  },
+  
+  // New items for the expanded game
+  celestialCompass: {
+    id: "celestialCompass",
+    name: "Celestial Compass",
+    description: "A compass that points toward the center of all realities. It glows brighter as you approach cosmic nexus points.",
+    icon: "🧭"
+  },
+  voidShard: {
+    id: "voidShard",
+    name: "Void Shard",
+    description: "A fragment of crystallized void. Cold to the touch and seems to absorb light around it.",
+    icon: "🔮"
+  },
+  starlightEssence: {
+    id: "starlightEssence",
+    name: "Starlight Essence",
+    description: "Liquid light captured in a small vial. It pulses with healing energy.",
+    effect: {
+      type: "health",
+      value: 30
+    },
+    icon: "✨"
+  },
+  guardianSigil: {
+    id: "guardianSigil",
+    name: "Guardian Sigil",
+    description: "A medallion bearing the symbol of the Cosmic Guardians. It hums when near areas of cosmic importance.",
+    icon: "🔱"
+  },
+  echoMemory: {
+    id: "echoMemory",
+    name: "Echo Memory",
+    description: "A crystalline fragment containing memories of a lost Guardian. Touching it reveals flashes of ancient knowledge.",
+    icon: "💎"
   }
 };
 
@@ -721,72 +756,4 @@ export const scenes: Record<string, Scene> = {
       {
         id: "activate-with-elara",
         text: "Use the Cosmic Key with Elara's guidance",
-        nextSceneId: "portal-activation"
-      }
-    ]
-  },
-  
-  "portal-activation": {
-    id: "portal-activation",
-    title: "Between Worlds",
-    description: "Under Elara's guidance, you insert the Cosmic Key into an almost invisible keyhole in the portal's frame. The archway ignites with starfire, patterns of constellations racing along its surface. Through the arch, you can see a swirling cosmic landscape of impossible beauty.",
-    npcDialog: "The way is open, but our journey is just beginning. Beyond lies the Cosmic Nexus, where all worlds touch. There we must find the Celestial Core and restore its balance before the Void consumes everything. Are you ready to take the next step in your destiny?",
-    choices: [
-      {
-        id: "enter-portal",
-        text: "Step through the portal with Elara",
-        nextSceneId: "to-be-continued"
-      }
-    ]
-  },
-  
-  "to-be-continued": {
-    id: "to-be-continued",
-    title: "Chapter One Complete",
-    description: "As you step through the cosmic portal with Elara, you feel yourself transforming - becoming something more than human, yet still yourself. The stars swirl around you, and you sense that a great adventure is just beginning. Countless worlds await, along with dangers and wonders beyond imagination.",
-    imagePath: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    choices: [
-      {
-        id: "continue-next-chapter",
-        text: "To Be Continued in Chapter Two: The Cosmic Nexus",
-        nextSceneId: "restart"
-      }
-    ]
-  },
-  
-  "game-over": {
-    id: "game-over",
-    title: "The Call Ignored",
-    description: "You steadfastly refuse the call to adventure. Eventually, the crystal's light fades, and your ceiling returns to normal. You tell yourself it was all just a strange dream. Yet in the weeks that follow, you notice odd changes in the world - strange weather patterns, occasional glimpses of impossible creatures, and at night, the stars seem to be slowly going out one by one. The boundary between worlds weakens without your help, and you can't shake the feeling that you've made a terrible mistake.",
-    choices: [
-      {
-        id: "try-again",
-        text: "Try Again",
-        nextSceneId: "start"
-      }
-    ]
-  },
-  
-  restart: {
-    id: "restart",
-    title: "Cosmic Quest",
-    description: "Thank you for playing this demo of Cosmic Quest! The full adventure would continue with more chapters, challenges, and cosmic wonders to discover.",
-    choices: [
-      {
-        id: "restart-game",
-        text: "Play Again",
-        nextSceneId: "start"
-      }
-    ]
-  }
-};
-
-export const initialGameState = {
-  currentSceneId: "start",
-  health: 100,
-  maxHealth: 100,
-  inventory: [],
-  unlockedScenes: ["start"],
-  seenText: [],
-  playedTime: 0
-};
+        nextSceneId: "portal

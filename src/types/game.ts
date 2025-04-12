@@ -32,6 +32,12 @@ export interface Scene {
   choices: Choice[];
   items?: string[];
   npcDialog?: string;
+  consequences?: {
+    addItems?: string[];
+    removeItems?: string[];
+    health?: number;
+    unlockScenes?: string[];
+  };
 }
 
 export interface GameState {
