@@ -110,13 +110,13 @@ export const scenes: Record<string, Scene> = {
       {
         id: "more-questions",
         text: "Ask how you were chosen",
-        nextSceneId: "more-questions"
+        nextSceneId: "more_questions"
       }
     ]
   },
   
-  more-questions: {
-    id: "more-questions",
+  "more_questions": {
+    id: "more_questions",
     title: "The Connection",
     description: "The crystal shows you flashes of memories: a childhood illness, a shooting star on your eighth birthday, a strange dream that repeated for years. Connections to the cosmic realm that have always been part of you.",
     npcDialog: "You've always been connected to both worlds, though you didn't know it. That's why you can hear me now, why you alone can traverse the boundary. Please, take the key. Time grows short.",
@@ -267,7 +267,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  forest-search: {
+  "forest-search": {
     id: "forest-search",
     title: "Hidden Treasure",
     description: "You take time to examine the strange forest around you. Among the roots of a spiraling tree, you spot a small crystal formation that pulses with gentle pink energy. It seems to react to your presence, glowing brighter as you approach.",
@@ -285,7 +285,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  after-crystal: {
+  "after-crystal": {
     id: "after-crystal",
     title: "Energized",
     description: "As you pick up the crystal, it dissolves into particles of light that sink into your skin. You feel refreshed and rejuvenated, your fatigue washing away. Now you can continue your journey with renewed strength.",
@@ -322,7 +322,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  lyra-music: {
+  "lyra-music": {
     id: "lyra-music",
     title: "Songs of the Cosmos",
     description: "Lyra's face lights up at your interest, the galaxies beneath their skin spinning faster in excitement.",
@@ -341,7 +341,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  earth-song: {
+  "earth-song": {
     id: "earth-song",
     title: "Homesick Melody",
     description: "Lyra plays a melody that somehow captures everything you love about Earth - the rush of ocean waves, wind through trees, the busy hum of cities, and quiet moments of peace. You feel a pang of homesickness even as you marvel at how a few notes can contain so much.",
@@ -358,7 +358,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  lyra-help: {
+  "lyra-help": {
     id: "lyra-help",
     title: "The Star Map",
     description: "Lyra reaches into the space beside them, their hand disappearing as if into an invisible pocket. They pull out an ancient-looking map made of some thin, shimmering material.",
@@ -375,7 +375,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  deeper-forest: {
+  "deeper-forest": {
     id: "deeper-forest",
     title: "Deepening Mystery",
     description: "The forest grows denser, the trees more twisted and alien. Occasionally, you glimpse shadowy forms darting between trunks - too quick to identify, but clearly watching. The Cosmic Key pulses more urgently in your hand, and if you have the Star Map, it reveals a path that seems to shift as you watch.",
@@ -418,7 +418,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  watcher-guidance: {
+  "watcher-guidance": {
     id: "watcher-guidance",
     title: "Cryptic Advice",
     description: "The central shadow figure tilts its head, regarding you with curious interest.",
@@ -432,7 +432,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  flee-watchers: {
+  "flee-watchers": {
     id: "flee-watchers",
     title: "Swift Retreat",
     description: "You back away from the shadow figures, keeping your eyes on them. They make no move to follow, but their starlight eyes track your movement with unnerving precision.",
@@ -446,7 +446,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  after-watchers: {
+  "after-watchers": {
     id: "after-watchers",
     title: "The Path Revealed",
     description: "With the Watchers' cryptic words echoing in your mind, you press on. The forest begins to thin, and ahead you see a clearing bathed in ethereal light. The pull of the Cosmic Key is strongest yet.",
@@ -459,7 +459,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  map-path: {
+  "map-path": {
     id: "map-path",
     title: "The Ancient Way",
     description: "Following the Star Map leads you along a path that seems to exist between the trees rather than among them. Symbols on the map glow in sequence, and as you follow each one, you notice ancient marker stones partially hidden by foliage - proof you're on a path walked by many before you.",
@@ -480,7 +480,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  marker-stone: {
+  "marker-stone": {
     id: "marker-stone",
     title: "Ancient Relic",
     description: "You brush away cosmic vines from one of the larger marker stones. It's covered in spiral patterns that match some on your map. At the base of the stone, half-buried in soil that sparkles like crushed stars, you find a small amulet with a seven-starred constellation pattern.",
@@ -493,7 +493,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  amulet-taken: {
+  "amulet-taken": {
     id: "amulet-taken",
     title: "Guardian's Mark",
     description: "As you lift the amulet, it glows with a soft blue light. The seven stars in its pattern rearrange themselves briefly to match the constellation directly above you before settling back into their original formation. You recall the Watchers' words about the mark of Seven Stars.",
@@ -506,7 +506,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  key-path: {
+  "key-path": {
     id: "key-path",
     title: "The Direct Approach",
     description: "You follow the pull of the Cosmic Key, which leads you on a more direct but challenging route. The forest grows denser here, the plants more alien and occasionally hostile - fronds reach for you as you pass, and luminous spores make your skin tingle where they land.",
@@ -530,7 +530,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  key-difficulty: {
+  "key-difficulty": {
     id: "key-difficulty",
     title: "Harsh Journey",
     description: "The direct path taxes your strength. Thorny vines scratch at your skin, and the air grows thick with spores that make breathing difficult. But your persistence pays off - ahead, you see a clearing bathed in light.",
@@ -543,7 +543,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  compass-discovery: {
+  "compass-discovery": {
     id: "compass-discovery",
     title: "Fortuitous Discovery",
     description: "Searching for an easier route, you discover a small cave entrance hidden behind cascading luminous vines. Inside, you find the remains of a previous traveler - now just dust and tattered clothing. Among the remains is an unusual compass with cosmic symbols instead of cardinal directions.",
@@ -564,7 +564,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  use-compass: {
+  "use-compass": {
     id: "use-compass",
     title: "Cosmic Navigation",
     description: "The Space Compass springs to life in your hand, its needle spinning wildly before settling on a symbol that matches one of the stars pulsing in the Cosmic Key. Following its guidance, you find a much easier path that winds through the forest in a gentle spiral.",
@@ -621,7 +621,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  guardian-test: {
+  "guardian-test": {
     id: "guardian-test",
     title: "The True Test",
     description: "You hold up the Ancient Amulet with the seven-starred pattern. 'Show me the mark of the Guardian,' you request. The figure's expression flickers with momentary surprise and then anger.",
@@ -657,7 +657,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  feigned-compliance: {
+  "feigned-compliance": {
     id: "feigned-compliance",
     title: "Strategic Deception",
     description: "You pretend to approach with the key extended. The false Guardian reaches out eagerly, but just as its fingers are about to touch the key, you dodge sideways and sprint toward the portal itself.",
@@ -670,7 +670,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  amulet-defense: {
+  "amulet-defense": {
     id: "amulet-defense",
     title: "Guardian's Protection",
     description: "You raise the Ancient Amulet, which flares with brilliant light. The Void creature shrinks back, hissing in pain. 'The mark of the Seven Stars! How did a mortal find-' Before it can finish, a beam of light strikes from above, and a melodious voice calls out.",
@@ -684,7 +684,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  portal-rush: {
+  "portal-rush": {
     id: "portal-rush",
     title: "Desperate Dash",
     description: "You run toward the portal with all your might. Behind you, the Void creature shrieks and gives chase. Tendrils of darkness lash at your back, burning cold where they touch. Just as you reach the portal, a beam of light strikes down from above, holding the creature at bay.",
@@ -697,7 +697,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  key-portal: {
+  "key-portal": {
     id: "key-portal",
     title: "The Springing Trap",
     description: "As you move toward the portal with the key, the false Elara's eyes gleam with triumph. Just as you're about to insert the key, a real voice - the one you recognize from the crystal - calls out in alarm from above.",
@@ -711,7 +711,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  true-elara: {
+  "true-elara": {
     id: "true-elara",
     title: "The True Guardian",
     description: "A figure descends from the stars above - similar to the impostor but radiating genuine warmth and light. On her brow, the constellation of Seven Stars glows softly. The Void Deceiver snarls but cannot approach as she creates a barrier of light around you and the portal.",
@@ -726,7 +726,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  portal-activation: {
+  "portal-activation": {
     id: "portal-activation",
     title: "Between Worlds",
     description: "Under Elara's guidance, you insert the Cosmic Key into an almost invisible keyhole in the portal's frame. The archway ignites with starfire, patterns of constellations racing along its surface. Through the arch, you can see a swirling cosmic landscape of impossible beauty.",
@@ -740,7 +740,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  to-be-continued: {
+  "to-be-continued": {
     id: "to-be-continued",
     title: "Chapter One Complete",
     description: "As you step through the cosmic portal with Elara, you feel yourself transforming - becoming something more than human, yet still yourself. The stars swirl around you, and you sense that a great adventure is just beginning. Countless worlds await, along with dangers and wonders beyond imagination.",
@@ -754,7 +754,7 @@ export const scenes: Record<string, Scene> = {
     ]
   },
   
-  game-over: {
+  "game-over": {
     id: "game-over",
     title: "The Call Ignored",
     description: "You steadfastly refuse the call to adventure. Eventually, the crystal's light fades, and your ceiling returns to normal. You tell yourself it was all just a strange dream. Yet in the weeks that follow, you notice odd changes in the world - strange weather patterns, occasional glimpses of impossible creatures, and at night, the stars seem to be slowly going out one by one. The boundary between worlds weakens without your help, and you can't shake the feeling that you've made a terrible mistake.",
