@@ -1,3 +1,4 @@
+
 import { Item, Scene } from "../types/game";
 
 export const items: Record<string, Item> = {
@@ -756,4 +757,185 @@ export const scenes: Record<string, Scene> = {
       {
         id: "activate-with-elara",
         text: "Use the Cosmic Key with Elara's guidance",
-        nextSceneId: "portal
+        nextSceneId: "portal-activation"
+      }
+    ]
+  },
+  
+  "portal-activation": {
+    id: "portal-activation",
+    title: "Gateway Between Worlds",
+    description: "You approach the massive crystalline arch with Elara. The Cosmic Key in your hand vibrates with increasing intensity, almost pulling you forward. 'Place it in the keystone,' Elara instructs, pointing to a small indentation at the apex of the arch.",
+    choices: [
+      {
+        id: "insert-key",
+        text: "Insert the Cosmic Key into the keystone",
+        nextSceneId: "portal-opens",
+        consequences: {
+          removeItems: ["cosmicKey"]
+        }
+      }
+    ]
+  },
+  
+  "portal-opens": {
+    id: "portal-opens",
+    title: "The Awakening",
+    description: "As the key slides into place, the entire arch awakens with brilliant light. The empty space within fills with a swirling vortex of stars and cosmic energy. A deep humming fills the air, and you feel the ground beneath you tremble slightly.",
+    imagePath: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    npcDialog: "The portal awakens! Now we must stabilize it. The Cosmic Nexus lies beyond - the center of all realities and the source of the disturbance. Are you ready to face what lies beyond, traveler?",
+    choices: [
+      {
+        id: "enter-portal",
+        text: "Step through the portal",
+        nextSceneId: "cosmic-nexus"
+      },
+      {
+        id: "hesitate-portal",
+        text: "Ask what to expect on the other side",
+        nextSceneId: "portal-explanation"
+      }
+    ]
+  },
+  
+  "portal-explanation": {
+    id: "portal-explanation",
+    title: "Final Preparations",
+    description: "Elara's expression softens at your hesitation. The portal continues to shimmer behind her, casting waves of light across the clearing.",
+    npcDialog: "Beyond lies the Cosmic Nexus - a place between all worlds where reality is... flexible. The Void has breached the Guardian's sanctum at its center, and is using it to pull energy from countless realms. Time flows differently there. Trust your instincts, and remember that intent shapes reality in the Nexus. Your belief matters more than physical laws.",
+    choices: [
+      {
+        id: "ready-now",
+        text: "Take a deep breath and step through",
+        nextSceneId: "cosmic-nexus"
+      }
+    ]
+  },
+  
+  "cosmic-nexus": {
+    id: "cosmic-nexus",
+    title: "The Cosmic Nexus",
+    description: "Stepping through the portal feels like diving into a sea of stars. For a moment, you exist everywhere and nowhere at once. Then reality solidifies around you. You stand on a floating island of crystalline material, one of many suspended in an infinite void. Paths of pure light connect some islands, while others drift in isolation. The sky - if it can be called that - is a maelstrom of cosmic energy and distant realities.",
+    imagePath: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    choices: [
+      {
+        id: "follow-elara",
+        text: "Follow Elara along the light paths",
+        nextSceneId: "nexus-journey"
+      },
+      {
+        id: "observe-nexus",
+        text: "Take a moment to observe the Nexus",
+        nextSceneId: "nexus-observation"
+      }
+    ]
+  },
+  
+  "nexus-observation": {
+    id: "nexus-observation",
+    title: "Cosmic Revelations",
+    description: "You pause to take in the impossible landscape around you. In the distance, you can see windows into other worlds - some familiar, some utterly alien. Through one, you glimpse a version of Earth where the continents formed differently. Through another, a world of sentient crystal beings. And in the furthest distance, a growing darkness that seems to be consuming these windows one by one.",
+    npcDialog: "What you see is the multiverse itself - infinite variations of reality. The Cosmic Nexus connects them all. That darkness is the Void's work. It doesn't simply destroy - it unmakes reality itself, returning everything to the primal nothing. We must reach the Guardian Sanctum at the center.",
+    choices: [
+      {
+        id: "continue-journey",
+        text: "Continue the journey to the Sanctum",
+        nextSceneId: "nexus-journey"
+      }
+    ]
+  },
+  
+  "nexus-journey": {
+    id: "nexus-journey",
+    title: "Paths of Light",
+    description: "Elara leads you across bridges of pure light that seem to form beneath your feet as you walk. The floating islands vary dramatically - some are lush with alien vegetation, others barren crystal, some appear to be fragments of civilizations now long gone. As you travel, you notice shadows moving between distant islands, similar to the Void Watchers but more purposeful, more dangerous.",
+    npcDialog: "Void Hunters. They serve the darkness directly. Stay close to me - my light conceals us somewhat, but if they spot us, we'll need to move quickly.",
+    choices: [
+      {
+        id: "stay-course",
+        text: "Stay on the main path with Elara",
+        nextSceneId: "sanctum-approach"
+      },
+      {
+        id: "investigate-island",
+        text: "Suggest investigating a nearby island with strange ruins",
+        nextSceneId: "ancient-ruins",
+        consequences: {
+          addItems: ["echoMemory"]
+        }
+      }
+    ]
+  },
+  
+  "ancient-ruins": {
+    id: "ancient-ruins",
+    title: "Echoes of the Past",
+    description: "The island holds the ruins of what appears to be a small temple or observatory. The architecture is unlike anything from Earth - angles that seem to bend in impossible ways, materials that shimmer between solid and translucent. At the center, a small crystalline fragment hovers above a pedestal.",
+    npcDialog: "A Guardian outpost, from before the Fall. This is... was my sister's posting. The crystal may hold her memories - her echo. It could provide valuable information, but touching another Guardian's echo is... intimate. The choice must be yours.",
+    choices: [
+      {
+        id: "take-echo",
+        text: "Respectfully take the Echo Memory",
+        nextSceneId: "memory-acquired"
+      },
+      {
+        id: "leave-echo",
+        text: "Leave it undisturbed",
+        nextSceneId: "sanctum-approach"
+      }
+    ]
+  },
+  
+  "memory-acquired": {
+    id: "memory-acquired",
+    title: "Visions of the Fall",
+    description: "As your fingers close around the crystal, your mind floods with fragmented memories - a Guardian's last moments. You see the Void's first assault on the Nexus, the desperate defense, a plan to seal the breach using the combined power of seven Guardian artifacts. Then darkness, as the memory ends.",
+    npcDialog: "You saw it, didn't you? The Seven Seals. It was our contingency plan, never implemented because we fell too quickly. But with these memories... we might be able to adapt the plan. Come, we must continue to the Sanctum.",
+    choices: [
+      {
+        id: "continue-to-sanctum",
+        text: "Continue to the Sanctum with new purpose",
+        nextSceneId: "sanctum-approach"
+      }
+    ]
+  },
+  
+  "sanctum-approach": {
+    id: "sanctum-approach",
+    title: "The Central Spire",
+    description: "After crossing countless light bridges, you approach what must be the center of the Nexus - a massive crystalline spire that stretches infinitely upward and downward. Light and energy pulse within its translucent structure, but dark veins now mar its surface, spreading like an infection. The entrance, once grand, is now partially collapsed and guarded by writhing shadows.",
+    imagePath: "https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    npcDialog: "The Guardian Sanctum - the heart of the Cosmic Nexus. The Void has already breached it, but hasn't fully corrupted the core yet. We must find a way past those Void Sentinels.",
+    choices: [
+      {
+        id: "direct-approach",
+        text: "Suggest a direct approach using Elara's light",
+        nextSceneId: "direct-confrontation",
+        consequences: {
+          health: -15
+        }
+      },
+      {
+        id: "find-another-way",
+        text: "Look for another entrance",
+        nextSceneId: "secret-entrance"
+      },
+      {
+        id: "use-amulet-entrance",
+        text: "Use the Ancient Amulet to reveal a path",
+        nextSceneId: "hidden-path",
+        requiredItems: ["ancientAmulet"]
+      }
+    ]
+  }
+};
+
+export const initialGameState = {
+  currentSceneId: "start",
+  health: 100,
+  maxHealth: 100,
+  inventory: [],
+  unlockedScenes: [],
+  seenText: [],
+  playedTime: 0
+};
