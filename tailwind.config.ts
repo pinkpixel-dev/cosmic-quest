@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom game colors
+				cosmic: {
+					dark: '#1A1F2C',
+					purple: '#8B5CF6',
+					blue: '#0EA5E9',
+					gold: '#F59E0B',
+					pink: '#D946EF',
+				},
+				game: {
+					text: '#E5DEFF',
+					description: '#FDE1D3',
+					dialog: '#D3E4FD',
+					choice: '#FEF7CD',
+					item: '#F2FCE2',
+					danger: '#FFDEE2',
 				}
+			},
+			fontFamily: {
+				pixel: ['"Press Start 2P"', 'cursive'],
+				adventure: ['"VT323"', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +105,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'text-appear': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'pulse-soft': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'text-appear': 'text-appear 0.5s ease-out forwards',
+				'pulse-soft': 'pulse-soft 3s infinite ease-in-out',
+				'float': 'float 6s infinite ease-in-out'
 			}
 		}
 	},
