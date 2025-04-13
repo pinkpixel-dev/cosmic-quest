@@ -1,27 +1,24 @@
+# Cloudflare Pages configuration
+name = "cosmic-quest-colors"
+compatibility_date = "2023-10-30"
+
+# Build settings
 [build]
 command = "npm run build"
-publish = "dist"
-clean_urls = true
+output_dir = "dist"
 
-[build.environment]
-NODE_VERSION = "20"
+# Environment variables
+[env.production]
+# Add production-specific environment variables here if needed
 
+[env.preview]
+# Add preview-specific environment variables here if needed
+
+# Routes configuration
+[routes]
+include = ["/*"]
+exclude = ["/assets/*"]
+
+# Site settings
 [site]
 bucket = "./dist"
-entry-point = "dist/index.html"
-
-[pages]
-include = ["/*"]
-exclude = []
-
-# Enable SPA/client-side routing support
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
-# Cache settings for static assets
-[[headers]]
-for = "/assets/*"
-[headers.values]
-Cache-Control = "public, max-age=31536000, immutable"
