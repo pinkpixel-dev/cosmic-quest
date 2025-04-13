@@ -1,5 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Jersey+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -54,7 +54,7 @@
   }
 
   body {
-    @apply bg-cosmic-dark text-game-text font-adventure;
+    @apply bg-cosmic-dark text-game-text font-text;
   }
 }
 
@@ -62,11 +62,11 @@
   .text-shadow {
     text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
   }
-  
+
   .text-shadow-gold {
     text-shadow: 0 0 5px rgba(245, 158, 11, 0.5);
   }
-  
+
   .pixel-border {
     border-image-source: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H8V1H7V2H6V3H5V4H4V5H3V6H2V7H1V8H0V0Z' fill='%238B5CF6'/%3E%3C/svg%3E");
     border-image-slice: 2;
@@ -75,7 +75,7 @@
     border-width: 4px;
     border-style: solid;
   }
-  
+
   .typing-effect {
     overflow: hidden;
     white-space: nowrap;
@@ -86,11 +86,11 @@
     from { width: 0 }
     to { width: 100% }
   }
-  
+
   .choice-hover {
     transition: all 0.2s;
   }
-  
+
   .choice-hover:hover {
     transform: translateX(10px);
     color: theme('colors.cosmic.gold');

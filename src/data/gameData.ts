@@ -36,8 +36,7 @@ export const items: Record<string, Item> = {
     description: "A compass that doesn't point north, but seems to guide you through the cosmos.",
     icon: "🧭"
   },
-  
-  // New items for the expanded game
+
   celestialCompass: {
     id: "celestialCompass",
     name: "Celestial Compass",
@@ -72,8 +71,7 @@ export const items: Record<string, Item> = {
     description: "A crystalline fragment containing memories of a lost Guardian. Touching it reveals flashes of ancient knowledge.",
     icon: "💎"
   },
-  
-  // Additional new items for the expanded game
+
   voidShield: {
     id: "voidShield",
     name: "Void Shield",
@@ -135,7 +133,7 @@ export const scenes: Record<string, Scene> = {
     id: "start",
     title: "The Cosmic Call",
     description: "You wake with a start, your heart pounding. The dream was so vivid - stars swirling, voices calling. As your eyes adjust to the darkness of your bedroom, you notice something impossible: your ceiling has vanished, replaced by an endless sea of stars. A gentle blue light fills the room, emanating from a small crystalline object on your nightstand that definitely wasn't there when you went to sleep.",
-    imagePath: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-start.png",
     choices: [
       {
         id: "examine",
@@ -154,12 +152,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   crystal: {
     id: "crystal",
     title: "The Messenger",
     description: "You cautiously pick up the crystal. It's warm to the touch and pulses with an inner light that syncs with your heartbeat. Suddenly, a voice speaks directly into your mind: 'The cosmos calls, traveler. The boundaries between worlds grow thin. We need your help.'",
-    imagePath: "https://images.unsplash.com/photo-1598517989203-885ffd58e81f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-crystal.png",
     npcDialog: "You must come. The Cosmic Guardians are fading, and the void grows. Take the key and find the portal. Please... you're our only hope.",
     choices: [
       {
@@ -183,7 +181,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   question: {
     id: "question",
     title: "The Guardian's Plea",
@@ -206,7 +204,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "more_questions": {
     id: "more_questions",
     title: "The Connection",
@@ -229,7 +227,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   refuse: {
     id: "refuse",
     title: "The Persistent Call",
@@ -247,7 +245,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   sleep: {
     id: "sleep",
     title: "Uneasy Dreams",
@@ -270,12 +268,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   window: {
     id: "window",
     title: "Changed World",
     description: "You approach your window and pull back the curtains. What you see makes your breath catch: your ordinary neighborhood street is gone. Instead, a vast cosmic landscape stretches before you - floating islands connected by bridges of starlight, strange plants that seem to be made of crystalline structures, and in the distance, a massive purple-black vortex that pulses ominously.",
-    imagePath: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-window.png",
     choices: [
       {
         id: "back-to-crystal",
@@ -289,7 +287,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   panic: {
     id: "panic",
     title: "Calming Presence",
@@ -303,7 +301,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   hide: {
     id: "hide",
     title: "No Escape",
@@ -316,12 +314,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   accept: {
     id: "accept",
     title: "The First Step",
     description: "As your fingers close around the crystal, a surge of energy flows through you. The room around you begins to dissolve, reality shifting like sand through an hourglass. The crystal transforms, elongating into a key of pure starlight. 'The Cosmic Key will guide you,' whispers Elara. 'Find the first portal in the ancient forest.'",
-    imagePath: "https://images.unsplash.com/photo-1439853949127-fa647821eba0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-accept.png",
     npcDialog: "Remember, traveler - nothing is quite what it seems between worlds. Trust your instincts, and look for the signs of the Guardians. I will meet you on the other side.",
     choices: [
       {
@@ -331,12 +329,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   forest: {
     id: "forest",
     title: "The Cosmic Forest",
     description: "You emerge into a forest unlike any on Earth. Trees spiral impossibly toward a sky filled with unfamiliar constellations. The plants glow with bioluminescence, casting dancing shadows. The Cosmic Key pulses in your hand, pointing deeper into the woods. In the distance, you hear beautiful but melancholy music.",
-    imagePath: "https://images.unsplash.com/photo-1518623001779-eb9e83f3e262?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-forest.png",
     choices: [
       {
         id: "follow-key",
@@ -358,7 +356,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "forest-search": {
     id: "forest-search",
     title: "Hidden Treasure",
@@ -376,7 +374,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "after-crystal": {
     id: "after-crystal",
     title: "Energized",
@@ -394,7 +392,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   music: {
     id: "music",
     title: "The Cosmic Musician",
@@ -413,7 +411,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "lyra-music": {
     id: "lyra-music",
     title: "Songs of the Cosmos",
@@ -432,7 +430,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "earth-song": {
     id: "earth-song",
     title: "Homesick Melody",
@@ -449,7 +447,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "lyra-help": {
     id: "lyra-help",
     title: "The Star Map",
@@ -466,7 +464,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "deeper-forest": {
     id: "deeper-forest",
     title: "Deepening Mystery",
@@ -490,7 +488,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   shadows: {
     id: "shadows",
     title: "Void Watchers",
@@ -509,7 +507,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "watcher-guidance": {
     id: "watcher-guidance",
     title: "Cryptic Advice",
@@ -523,7 +521,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "flee-watchers": {
     id: "flee-watchers",
     title: "Swift Retreat",
@@ -537,7 +535,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "after-watchers": {
     id: "after-watchers",
     title: "The Path Revealed",
@@ -550,7 +548,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "map-path": {
     id: "map-path",
     title: "The Ancient Way",
@@ -571,7 +569,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "marker-stone": {
     id: "marker-stone",
     title: "Ancient Relic",
@@ -584,7 +582,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "amulet-taken": {
     id: "amulet-taken",
     title: "Guardian's Mark",
@@ -597,7 +595,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "key-path": {
     id: "key-path",
     title: "The Direct Approach",
@@ -621,7 +619,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "key-difficulty": {
     id: "key-difficulty",
     title: "Harsh Journey",
@@ -634,7 +632,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-discovery": {
     id: "compass-discovery",
     title: "Fortuitous Discovery",
@@ -655,7 +653,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "use-compass": {
     id: "use-compass",
     title: "Cosmic Navigation",
@@ -668,12 +666,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   clearing: {
     id: "clearing",
     title: "The Ancient Portal",
     description: "You emerge into a perfectly circular clearing. In the center stands a massive archway made of what appears to be pure starlight solidified into crystal. The arch is dark and dormant, but as you approach with the Cosmic Key, tiny motes of light begin to swirl around its frame. From the shadows at the edge of the clearing, a figure approaches - tall, elegant, with skin like the night sky.",
-    imagePath: "https://images.unsplash.com/photo-1596079890744-c1a0462d0975?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-clearing.png",
     npcDialog: "At last you've arrived. I am Elara, Guardian of the Cosmic Threshold. The key, traveler - it must be used now before the window of alignment passes.",
     choices: [
       {
@@ -694,7 +692,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   observation: {
     id: "observation",
     title: "Something Amiss",
@@ -712,7 +710,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "guardian-test": {
     id: "guardian-test",
     title: "The True Test",
@@ -726,7 +724,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   confrontation: {
     id: "confrontation",
     title: "The Void Deceiver",
@@ -748,7 +746,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "feigned-compliance": {
     id: "feigned-compliance",
     title: "Strategic Deception",
@@ -761,7 +759,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "amulet-defense": {
     id: "amulet-defense",
     title: "Guardian's Protection",
@@ -775,7 +773,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "portal-rush": {
     id: "portal-rush",
     title: "Desperate Dash",
@@ -788,7 +786,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "key-portal": {
     id: "key-portal",
     title: "The Springing Trap",
@@ -802,12 +800,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "true-elara": {
     id: "true-elara",
     title: "The True Guardian",
     description: "A figure descends from the stars above - similar to the impostor but radiating genuine warmth and light. On her brow, the constellation of Seven Stars glows softly. The Void Deceiver snarls but cannot approach as she creates a barrier of light around you and the portal.",
-    imagePath: "https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-true-elara.png",
     npcDialog: "I am Elara, the true Guardian. You've done well to come this far, traveler. Now we must activate the portal and seal the rift before more Void creatures break through.",
     choices: [
       {
@@ -817,7 +815,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "portal-activation": {
     id: "portal-activation",
     title: "Gateway Between Worlds",
@@ -833,12 +831,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "portal-opens": {
     id: "portal-opens",
     title: "The Awakening",
     description: "As the key slides into place, the entire arch awakens with brilliant light. The empty space within fills with a swirling vortex of stars and cosmic energy. A deep humming fills the air, and you feel the ground beneath you tremble slightly.",
-    imagePath: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-portal-opens.png",
     npcDialog: "The portal awakens! Now we must stabilize it. The Cosmic Nexus lies beyond - the center of all realities and the source of the disturbance. Are you ready to face what lies beyond, traveler?",
     choices: [
       {
@@ -853,7 +851,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "portal-explanation": {
     id: "portal-explanation",
     title: "Final Preparations",
@@ -867,12 +865,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "cosmic-nexus": {
     id: "cosmic-nexus",
     title: "The Cosmic Nexus",
     description: "Stepping through the portal feels like diving into a sea of stars. For a moment, you exist everywhere and nowhere at once. Then reality solidifies around you. You stand on a floating island of crystalline material, one of many suspended in an infinite void. Paths of pure light connect some islands, while others drift in isolation. The sky - if it can be called that - is a maelstrom of cosmic energy and distant realities.",
-    imagePath: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-cosmic-nexus.png",
     choices: [
       {
         id: "follow-elara",
@@ -886,7 +884,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "nexus-observation": {
     id: "nexus-observation",
     title: "Cosmic Revelations",
@@ -900,7 +898,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "nexus-journey": {
     id: "nexus-journey",
     title: "Paths of Light",
@@ -922,7 +920,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "ancient-ruins": {
     id: "ancient-ruins",
     title: "Echoes of the Past",
@@ -941,7 +939,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "memory-acquired": {
     id: "memory-acquired",
     title: "Visions of the Fall",
@@ -955,12 +953,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sanctum-approach": {
     id: "sanctum-approach",
     title: "The Central Spire",
     description: "After crossing countless light bridges, you approach what must be the center of the Nexus - a massive crystalline spire that stretches infinitely upward and downward. Light and energy pulse within its translucent structure, but dark veins now mar its surface, spreading like an infection. The entrance, once grand, is now partially collapsed and guarded by writhing shadows.",
-    imagePath: "https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-sanctum-approach.png",
     npcDialog: "The Guardian Sanctum - the heart of the Cosmic Nexus. The Void has already breached it, but hasn't fully corrupted the core yet. We must find a way past those Void Sentinels.",
     choices: [
       {
@@ -984,7 +982,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "direct-confrontation": {
     id: "direct-confrontation",
     title: "Light Against Shadow",
@@ -998,7 +996,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "secret-entrance": {
     id: "secret-entrance",
     title: "The Hidden Way",
@@ -1012,7 +1010,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "hidden-path": {
     id: "hidden-path",
     title: "The Guardian's Way",
@@ -1026,7 +1024,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "maintenance-tunnels": {
     id: "maintenance-tunnels",
     title: "Beneath the Sanctum",
@@ -1048,7 +1046,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "energy-nexus": {
     id: "energy-nexus",
     title: "Confluence of Powers",
@@ -1061,7 +1059,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "after-ink": {
     id: "after-ink",
     title: "Continuing Upward",
@@ -1075,7 +1073,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "ascension-chamber": {
     id: "ascension-chamber",
     title: "The Lift",
@@ -1094,7 +1092,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "lift-ambush": {
     id: "lift-ambush",
     title: "Ascending Danger",
@@ -1117,7 +1115,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "hidden-stairway": {
     id: "hidden-stairway",
     title: "The Spiral Path",
@@ -1134,7 +1132,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mid-level-discovery": {
     id: "mid-level-discovery",
     title: "The Keeper's Study",
@@ -1152,7 +1150,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "continue-ascent": {
     id: "continue-ascent",
     title: "The Upper Reaches",
@@ -1166,7 +1164,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "difficult-ascent": {
     id: "difficult-ascent",
     title: "Fighting Shadows",
@@ -1179,7 +1177,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "successful-ascent": {
     id: "successful-ascent",
     title: "The Amulet's Power",
@@ -1193,7 +1191,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "inner-chambers": {
     id: "inner-chambers",
     title: "Heart of the Sanctum",
@@ -1215,7 +1213,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mural-discovery": {
     id: "mural-discovery",
     title: "Hidden Knowledge",
@@ -1229,12 +1227,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sanctum-interior": {
     id: "sanctum-interior",
     title: "The Chamber of Stars",
     description: "All paths converge on an enormous spherical chamber at the heart of the spire. The walls, floor, and ceiling are transparent crystal, giving the impression of standing in open space. At the center floats what can only be the Core - a swirling mass of pure creative energy, light and color dancing within its form. But dark tendrils have wrapped around it, squeezing and draining its power into a growing rift of absolute darkness that hovers opposite where you stand.",
-    imagePath: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-sanctum-interior.png",
     npcDialog: "The Cosmic Core - the wellspring of creative energy that sustains the Nexus and, through it, all connected realities. And there - the Void Breach. It's worse than I feared. The corruption has nearly reached the Core's center.",
     choices: [
       {
@@ -1249,7 +1247,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "core-examination": {
     id: "core-examination",
     title: "The Fading Light",
@@ -1263,7 +1261,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "void-examination": {
     id: "void-examination",
     title: "The Growing Darkness",
@@ -1277,7 +1275,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "revelation": {
     id: "revelation",
     title: "The Terrible Truth",
@@ -1291,7 +1289,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "guardian-plan": {
     id: "guardian-plan",
     title: "The Seven Seals",
@@ -1310,7 +1308,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "no-alternatives": {
     id: "no-alternatives",
     title: "The Only Way",
@@ -1324,7 +1322,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "quest-acceptance": {
     id: "quest-acceptance",
     title: "The Cosmic Quest",
@@ -1338,7 +1336,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "first-destination": {
     id: "first-destination",
     title: "The First Journey",
@@ -1357,7 +1355,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "preparation": {
     id: "preparation",
     title: "Gathering Strength",
@@ -1374,12 +1372,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "crystal-expanse": {
     id: "crystal-expanse",
     title: "The Crystal Expanse",
     description: "Elara creates a shimmering portal, and you step through into a world unlike any you've seen. Enormous crystal formations stretch in all directions, refracting light in dazzling patterns. The ground beneath your feet is smooth, polished crystal that somehow doesn't slip. The sky is a pale lavender, with three small suns orbiting each other.",
-    imagePath: "https://images.unsplash.com/photo-1579544757872-ce8f6af30e0f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-crystal-expanse.png",
     choices: [
       {
         id: "explore-landscape",
@@ -1393,7 +1391,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "crystal-discovery": {
     id: "crystal-discovery",
     title: "Reflections and Echoes",
@@ -1412,7 +1410,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "memory-trail": {
     id: "memory-trail",
     title: "Trail of Memories",
@@ -1425,7 +1423,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "crystal-beings": {
     id: "crystal-beings",
     title: "The Last Keepers",
@@ -1444,7 +1442,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "keeper-history": {
     id: "keeper-history",
     title: "A Fallen Civilization",
@@ -1458,7 +1456,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "keeper-response": {
     id: "keeper-response",
     title: "The Guardian's Friend",
@@ -1477,7 +1475,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "test-explanation": {
     id: "test-explanation",
     title: "The Compass's Choice",
@@ -1491,7 +1489,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "fortress-approach": {
     id: "fortress-approach",
     title: "The Crystal Spire",
@@ -1512,7 +1510,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sinking-danger": {
     id: "sinking-danger",
     title: "Deceptive Depths",
@@ -1526,7 +1524,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "discover-keepers": {
     id: "discover-keepers",
     title: "Lake Guardians",
@@ -1540,7 +1538,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "journey-to-spire": {
     id: "journey-to-spire",
     title: "Crossing the Mirror",
@@ -1554,7 +1552,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "spire-entrance": {
     id: "spire-entrance",
     title: "The Gleaming Door",
@@ -1567,7 +1565,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "spire-interior": {
     id: "spire-interior",
     title: "Halls of Light",
@@ -1589,7 +1587,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "vision-insights": {
     id: "vision-insights",
     title: "Temporal Glimpses",
@@ -1603,7 +1601,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "key-manifestation": {
     id: "key-manifestation",
     title: "Manifested Potential",
@@ -1617,7 +1615,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-chamber": {
     id: "compass-chamber",
     title: "The Chamber of Reflection",
@@ -1630,7 +1628,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-test": {
     id: "compass-test",
     title: "The Moment of Judgment",
@@ -1649,7 +1647,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-consideration": {
     id: "compass-consideration",
     title: "Honest Doubt",
@@ -1663,7 +1661,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-acceptance": {
     id: "compass-acceptance",
     title: "Chosen Path",
@@ -1685,7 +1683,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "travel-explanation": {
     id: "travel-explanation",
     title: "Pathways Between Worlds",
@@ -1699,7 +1697,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "return-to-nexus": {
     id: "return-to-nexus",
     title: "The Path Opens",
@@ -1713,7 +1711,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "reunion-elara": {
     id: "reunion-elara",
     title: "Return to the Core",
@@ -1732,7 +1730,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "deterioration": {
     id: "deterioration",
     title: "Racing Against Time",
@@ -1746,7 +1744,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "planning-next": {
     id: "planning-next",
     title: "The Path Forward",
@@ -1765,7 +1763,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-guidance": {
     id: "shadow-guidance",
     title: "Warnings and Wisdom",
@@ -1779,7 +1777,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-realm-transition": {
     id: "shadow-realm-transition",
     title: "Between Worlds",
@@ -1793,12 +1791,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-arrival": {
     id: "shadow-arrival",
     title: "The Twilight Land",
     description: "The portal closes behind you, leaving you in a world unlike any you've seen before. The sky is a perpetual deep purple twilight, neither day nor night. The landscape consists of twisted, impossible shapes that seem to shift when not observed directly. The ground beneath your feet feels solid one moment and slightly yielding the next, like walking on packed sand that occasionally turns to mud.",
-    imagePath: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-shadow-arrival.png",
     choices: [
       {
         id: "consult-compass",
@@ -1812,7 +1810,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-direction": {
     id: "compass-direction",
     title: "The Guiding Star",
@@ -1825,7 +1823,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-landscape": {
     id: "shadow-landscape",
     title: "Things Unseen",
@@ -1844,7 +1842,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-defense": {
     id: "compass-defense",
     title: "Light in Shadow",
@@ -1858,7 +1856,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-weaver": {
     id: "shadow-weaver",
     title: "The Twilight Inhabitant",
@@ -1877,7 +1875,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-path": {
     id: "shadow-path",
     title: "The Winding Way",
@@ -1895,7 +1893,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-encounter": {
     id: "shadow-encounter",
     title: "Ambiguous Encounter",
@@ -1914,7 +1912,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-response": {
     id: "shadow-response",
     title: "Emerging from Darkness",
@@ -1928,7 +1926,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "umbral-response": {
     id: "umbral-response",
     title: "A Guide in Darkness",
@@ -1947,7 +1945,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-bargain": {
     id: "shadow-bargain",
     title: "Terms of Agreement",
@@ -1966,7 +1964,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "crystal-explanation": {
     id: "crystal-explanation",
     title: "Shadow Heritage",
@@ -1985,7 +1983,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "umbral-reassurance": {
     id: "umbral-reassurance",
     title: "Shadow's Honor",
@@ -1999,7 +1997,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "solo-journey": {
     id: "solo-journey",
     title: "The Lone Path",
@@ -2013,7 +2011,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "journey-to-citadel": {
     id: "journey-to-citadel",
     title: "Shadowed Companions",
@@ -2032,7 +2030,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "citadel-history": {
     id: "citadel-history",
     title: "Tales of Shadow",
@@ -2051,7 +2049,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "defense-briefing": {
     id: "defense-briefing",
     title: "Warnings and Preparations",
@@ -2070,7 +2068,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "infiltration-plan": {
     id: "infiltration-plan",
     title: "Planning the Approach",
@@ -2084,7 +2082,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mountain-path": {
     id: "mountain-path",
     title: "The Shifting Ascent",
@@ -2102,7 +2100,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-limitation": {
     id: "compass-limitation",
     title: "The Compass's Limits",
@@ -2115,7 +2113,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "instinct-guidance": {
     id: "instinct-guidance",
     title: "Finding the True Path",
@@ -2128,7 +2126,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mountain-encounter": {
     id: "mountain-encounter",
     title: "The Path Guardian",
@@ -2147,7 +2145,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "guardian-interest": {
     id: "guardian-interest",
     title: "Ancient Interest",
@@ -2161,7 +2159,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "guardian-judgment": {
     id: "guardian-judgment",
     title: "Recognition",
@@ -2180,7 +2178,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "trial-explanation": {
     id: "trial-explanation",
     title: "The Nature of Fear",
@@ -2194,7 +2192,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mountain-base": {
     id: "mountain-base",
     title: "The Foot of Shadow Peaks",
@@ -2212,7 +2210,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "hidden-shortcut": {
     id: "hidden-shortcut",
     title: "The Weaver's Way",
@@ -2226,7 +2224,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "inner-mountain": {
     id: "inner-mountain",
     title: "Crystalline Tunnels",
@@ -2244,7 +2242,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "tunnel-explanation": {
     id: "tunnel-explanation",
     title: "Shadows and Secrets",
@@ -2263,7 +2261,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mutual-trust": {
     id: "mutual-trust",
     title: "Building Bridges",
@@ -2277,7 +2275,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "tunnel-ambush": {
     id: "tunnel-ambush",
     title: "Unwelcome Guardians",
@@ -2291,7 +2289,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "evading-wards": {
     id: "evading-wards",
     title: "Desperate Detour",
@@ -2305,7 +2303,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "finding-new-path": {
     id: "finding-new-path",
     title: "Adaptation",
@@ -2319,7 +2317,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "tunnel-exit": {
     id: "tunnel-exit",
     title: "Emergence",
@@ -2333,7 +2331,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mountain-climb": {
     id: "mountain-climb",
     title: "The Winding Ascent",
@@ -2352,7 +2350,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "smooth-ascent": {
     id: "smooth-ascent",
     title: "Harmonious Progress",
@@ -2365,7 +2363,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "path-insight": {
     id: "path-insight",
     title: "Understanding the Mountain",
@@ -2379,7 +2377,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "citadel-vista": {
     id: "citadel-vista",
     title: "First Glimpse",
@@ -2397,7 +2395,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "approach-planning": {
     id: "approach-planning",
     title: "Strategic Considerations",
@@ -2416,7 +2414,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "side-approach": {
     id: "side-approach",
     title: "The Keeper's Entrance",
@@ -2430,7 +2428,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "practical-problem": {
     id: "practical-problem",
     title: "Ancient Security",
@@ -2452,7 +2450,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "failed-attempt": {
     id: "failed-attempt",
     title: "Security Response",
@@ -2466,7 +2464,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "citadel-gates": {
     id: "citadel-gates",
     title: "The Grand Entrance",
@@ -2484,7 +2482,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "symbol-insight": {
     id: "symbol-insight",
     title: "Ancient Wisdom",
@@ -2498,7 +2496,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "twilight-gate": {
     id: "twilight-gate",
     title: "The Ritual of Opening",
@@ -2516,7 +2514,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "undercroft-approach": {
     id: "undercroft-approach",
     title: "The Foundations",
@@ -2535,7 +2533,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "undercroft-navigation": {
     id: "undercroft-navigation",
     title: "Finding a Path Upward",
@@ -2549,7 +2547,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "resonance-chamber": {
     id: "resonance-chamber",
     title: "Unexpected Discovery",
@@ -2568,7 +2566,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-enhancement": {
     id: "compass-enhancement",
     title: "Cosmic Attunement",
@@ -2587,7 +2585,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "attunement-process": {
     id: "attunement-process",
     title: "Cosmic Harmony",
@@ -2609,7 +2607,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "enhanced-compass": {
     id: "enhanced-compass",
     title: "Cosmic Vision",
@@ -2623,7 +2621,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "transition-point": {
     id: "transition-point",
     title: "The Ascending Spiral",
@@ -2642,7 +2640,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "reassurance": {
     id: "reassurance",
     title: "Shadow's Promise",
@@ -2656,7 +2654,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "ritual-explanation": {
     id: "ritual-explanation",
     title: "Ancient Ceremony",
@@ -2670,7 +2668,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "ritual-begins": {
     id: "ritual-begins",
     title: "The Opening",
@@ -2683,7 +2681,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "gate-opens": {
     id: "gate-opens",
     title: "Harmonious Entry",
@@ -2697,7 +2695,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "citadel-approach": {
     id: "citadel-approach",
     title: "The Final Approach",
@@ -2710,7 +2708,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "solitary-arrival": {
     id: "solitary-arrival",
     title: "The Twilight Gate",
@@ -2728,7 +2726,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "gate-puzzle": {
     id: "gate-puzzle",
     title: "Balance of Forces",
@@ -2741,7 +2739,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "creative-solution": {
     id: "creative-solution",
     title: "Shadow and Light",
@@ -2754,7 +2752,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "partial-success": {
     id: "partial-success",
     title: "Almost There",
@@ -2768,7 +2766,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "unexpected-ally": {
     id: "unexpected-ally",
     title: "The Observer",
@@ -2782,7 +2780,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "combined-effort": {
     id: "combined-effort",
     title: "Harmony Achieved",
@@ -2796,7 +2794,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-opening": {
     id: "compass-opening",
     title: "The Guiding Light",
@@ -2809,7 +2807,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "service-entrance": {
     id: "service-entrance",
     title: "The Keeper's Way",
@@ -2822,7 +2820,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "entry-granted": {
     id: "entry-granted",
     title: "The Way Opens",
@@ -2835,7 +2833,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "service-corridors": {
     id: "service-corridors",
     title: "The Hidden Paths",
@@ -2856,7 +2854,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "useful-discovery": {
     id: "useful-discovery",
     title: "Keeper's Cache",
@@ -2869,7 +2867,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "reality-anchor": {
     id: "reality-anchor",
     title: "Stabilizing Force",
@@ -2882,7 +2880,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "entrance-hall": {
     id: "entrance-hall",
     title: "Grandeur and Solemnity",
@@ -2896,7 +2894,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "plan-confirmation": {
     id: "plan-confirmation",
     title: "Parting Ways",
@@ -2910,7 +2908,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "vault-level": {
     id: "vault-level",
     title: "The Division",
@@ -2924,7 +2922,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "upper-corridors": {
     id: "upper-corridors",
     title: "Pathways of Light",
@@ -2942,7 +2940,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sentinel-encounter": {
     id: "sentinel-encounter",
     title: "Ancient Guardian",
@@ -2963,7 +2961,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sentinel-recognition": {
     id: "sentinel-recognition",
     title: "Ancient Protocol",
@@ -2976,7 +2974,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sentinel-pursuit": {
     id: "sentinel-pursuit",
     title: "Guardian's Wrath",
@@ -2989,7 +2987,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "careful-approach": {
     id: "careful-approach",
     title: "Prudent Progress",
@@ -3002,7 +3000,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "light-approach": {
     id: "light-approach",
     title: "Corridor of Illumination",
@@ -3015,7 +3013,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "light-guardian": {
     id: "light-guardian",
     title: "The Vault's Keeper",
@@ -3034,7 +3032,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sentinel-verification": {
     id: "sentinel-verification",
     title: "Ancient Recognition",
@@ -3048,7 +3046,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sentinel-consideration": {
     id: "sentinel-consideration",
     title: "Program Parameters",
@@ -3062,7 +3060,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "vault-anteroom": {
     id: "vault-anteroom",
     title: "Threshold of Power",
@@ -3080,7 +3078,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "locked-vault": {
     id: "locked-vault",
     title: "Sealed Chamber",
@@ -3093,7 +3091,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "final-authorization": {
     id: "final-authorization",
     title: "The Final Key",
@@ -3111,7 +3109,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "mind-scan": {
     id: "mind-scan",
     title: "Soul Reading",
@@ -3132,7 +3130,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "scan-resistance": {
     id: "scan-resistance",
     title: "Resistance Detected",
@@ -3150,7 +3148,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "complementary-keys": {
     id: "complementary-keys",
     title: "Unexpected Resonance",
@@ -3163,7 +3161,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "vault-opens": {
     id: "vault-opens",
     title: "Access Granted",
@@ -3176,7 +3174,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shield-chamber": {
     id: "shield-chamber",
     title: "The Trial Chamber",
@@ -3195,7 +3193,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "trial-explanation-2": {
     id: "trial-explanation-2",
     title: "The Voice Explains",
@@ -3209,7 +3207,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "trial-begins": {
     id: "trial-begins",
     title: "The Mirror of Fear",
@@ -3227,7 +3225,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "illusion-strengthens": {
     id: "illusion-strengthens",
     title: "Inescapable Truth",
@@ -3241,7 +3239,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "courage-shown": {
     id: "courage-shown",
     title: "The True Test",
@@ -3258,7 +3256,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shield-acquired": {
     id: "shield-acquired",
     title: "Power and Responsibility",
@@ -3272,7 +3270,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "vault-exit": {
     id: "vault-exit",
     title: "Mission Accomplished",
@@ -3285,7 +3283,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "rendezvous-approach": {
     id: "rendezvous-approach",
     title: "The Return Journey",
@@ -3298,7 +3296,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-return": {
     id: "shadow-return",
     title: "Successful Reunion",
@@ -3317,7 +3315,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-explanation": {
     id: "shadow-explanation",
     title: "Heritage Reclaimed",
@@ -3331,7 +3329,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "departure-plans": {
     id: "departure-plans",
     title: "The Way Forward",
@@ -3350,7 +3348,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "shadow-escort": {
     id: "shadow-escort",
     title: "Allies in Twilight",
@@ -3364,7 +3362,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "independent-return": {
     id: "independent-return",
     title: "Self-Reliant Journey",
@@ -3377,7 +3375,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "realm-boundary": {
     id: "realm-boundary",
     title: "The Thinning Veil",
@@ -3390,7 +3388,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "compass-portal": {
     id: "compass-portal",
     title: "Gateway Home",
@@ -3403,7 +3401,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "elara-waiting": {
     id: "elara-waiting",
     title: "Return to the Core",
@@ -3422,7 +3420,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "sharing-insights": {
     id: "sharing-insights",
     title: "Cultural Exchange",
@@ -3436,7 +3434,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "worsening-situation": {
     id: "worsening-situation",
     title: "Racing Against Time",
@@ -3458,7 +3456,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "restoration-period": {
     id: "restoration-period",
     title: "Brief Respite",
@@ -3471,7 +3469,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "planning-session": {
     id: "planning-session",
     title: "The Next Artifact",
@@ -3485,7 +3483,7 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "time-for-a-break": {
     id: "time-for-a-break",
     title: "Journey's Pause",
@@ -3499,12 +3497,12 @@ export const scenes: Record<string, Scene> = {
       }
     ]
   },
-  
+
   "to-be-continued": {
     id: "to-be-continued",
     title: "To Be Continued...",
     description: "Your cosmic quest has only just begun. With two powerful artifacts secured and allies made in unexpected places, you stand ready to face whatever challenges the multiverse presents next. The Cosmic Core still needs saving, and many realms await your exploration.",
-    imagePath: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    imagePath: "/images/scenes/scene-to-be-continued.png",
     npcDialog: "Rest now, but know that soon you must journey onward. The fate of countless realities depends on your continued courage and determination. When next we meet, new adventures and greater challenges await.",
     choices: [
       {

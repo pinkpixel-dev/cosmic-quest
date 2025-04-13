@@ -2,25 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cosmic-quest-colors</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Cosmic Quest ✨</title>
+    <meta name="description" content="Dream it, Pixel it - An cosmic adventure game" />
+    <meta name="author" content="Pink Pixel" />
 
-    <meta property="og:title" content="cosmic-quest-colors" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Cosmic Quest ✨" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:description" content="Dream it, Pixel it - An cosmic adventure game" />
+    <meta property="og:url" content="https://pinkpixel.dev" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Ensure text is visible while fonts are loading */
+      body {
+        font-display: swap;
+        font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Prevent FOUT (Flash of Unstyled Text) */
+      .wf-loading {
+        visibility: hidden;
+      }
+      .wf-active, .wf-inactive {
+        visibility: visible;
+      }
+    </style>
+
   </head>
 
-  <body>
+  <body class="wf-loading">
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Add a class to the body when fonts are loaded
+      document.fonts.ready.then(() => {
+        document.body.classList.remove('wf-loading');
+        document.body.classList.add('wf-active');
+      });
+    </script>
   </body>
 </html>

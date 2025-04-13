@@ -81,8 +81,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				pixel: ['"Press Start 2P"', 'cursive'],
-				adventure: ['"VT323"', 'monospace'],
+				title: ['"Press Start 2P"', 'system-ui'],
+				text: ['"Jersey 10"', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

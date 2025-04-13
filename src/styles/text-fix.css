@@ -1,0 +1,35 @@
+/* Text rendering fixes */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+/* Ensure proper font loading */
+body {
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Ensure text is visible during font loading */
+.font-adventure {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.font-pixel {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+/* Fix for text display issues */
+p, span, div {
+  word-break: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+  text-overflow: clip;
+  white-space: normal;
+}

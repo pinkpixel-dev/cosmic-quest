@@ -10,9 +10,9 @@ interface ChoiceButtonProps {
   hasRequirements?: boolean;
 }
 
-const ChoiceButton: React.FC<ChoiceButtonProps> = ({ 
-  choice, 
-  onClick, 
+const ChoiceButton: React.FC<ChoiceButtonProps> = ({
+  choice,
+  onClick,
   disabled = false,
   showRequirements = true,
   hasRequirements = false
@@ -20,8 +20,8 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   return (
     <button
       className={`text-left p-3 my-2 w-full rounded-md transition-all duration-200 choice-hover
-        ${disabled 
-          ? 'bg-muted/10 text-muted-foreground cursor-not-allowed border border-muted/20' 
+        ${disabled
+          ? 'bg-muted/10 text-muted-foreground cursor-not-allowed border border-muted/20'
           : 'bg-muted/20 text-game-choice hover:bg-muted/30 border border-cosmic-purple/20 hover:border-cosmic-purple/50'
         }
         ${hasRequirements && !disabled ? 'border-cosmic-gold/30 hover:border-cosmic-gold' : ''}
@@ -29,7 +29,7 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
       onClick={() => !disabled && onClick(choice)}
       disabled={disabled}
     >
-      <div className="flex items-center">
+      <div className="flex items-center font-text text-lg md:text-xl">
         <span className="mr-2">➤</span>
         <span>{choice.text}</span>
         {hasRequirements && showRequirements && (
